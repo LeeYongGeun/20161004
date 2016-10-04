@@ -1,0 +1,52 @@
+a = 'SKKU'
+# a[0] = 'G' 사용불가 문자열은 한번지정하면 변환불가
+
+b = a.replace('S', 'G')
+print(b)
+c = 3
+print('I replaced {1} to {0}'.format(a, b))  # index는 0부터시작
+
+d = 'I replaced {1} to {2}'.format(a, b, c)
+print(d)
+
+print('I replaced ' + a + 'to ' + b + str(c))  # c는 숫자이기때문에 str을 써 문자열로 지정을 해주어야 출력가능
+# int float complex를 앞에 붙일시 형변환가능, 복소수 3+4i는 3+4j라고씀
+
+print(5 % 2)  # 나머지연산자
+print(3 ** 2)  # 3^2
+print(3 / 2)  # 진짜나누기
+print(1 // 3)  # 몫연산자
+print(1 + 2.)  # 파이썬은 결과값을보고 자동으로 형변환
+
+e = "hi \n"  # \n 한줄띄우기
+print(e)
+
+f = r"hi \n"  # r을붙이면 순문자열
+print(f)
+
+# class명에 대해서만 카멜케이스형태
+# 변수, 함수는 소문자로쓴다 단어사이는 _로 구분지음
+# 상수변수는 전부 대문자로 표시
+
+i = 5
+i += 1  # i=i+1
+print(i)
+number = 3
+guess = int(input('Enter an integer : '))  # 사용자가 키보드로 입력한 값은 무조건 string
+if guess == number:
+    # New block starts here
+    print('Congratulations, you guessed it.')
+    print('(but you do not win any prizes!)')
+    # New block ends here
+elif guess < number:
+    # Another block
+    print('No, it is a little higher than that')
+    # You can do whatever you want in a block ...
+else:
+    print('No, it is a little lower than that')
+    # you must have guessed > number to reach here
+#Code->Inspect Code 코드검사
+#Ctrl+Art+L
+
+print("z",end='') #마지막 \n을 ''로 끝나게함으로써 없엠
+print("b")
