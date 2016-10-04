@@ -1,0 +1,5 @@
+a= 'SKKU'
+b = a.replace('S','G')
+print(b)
+
+print('I replaced {1} to {0}' .format(a, b))
