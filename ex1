@@ -1,5 +1,33 @@
 a= 'SKKU'
+#a[0] = 'G' 사용불가 문자열은 한번지정하면 변환불가
+
 b = a.replace('S','G')
 print(b)
+c=3
+print('I replaced {1} to {0}' .format(a, b)) #index는 0부터시작
 
-print('I replaced {1} to {0}' .format(a, b))
+d='I replaced {1} to {2}' .format(a, b, c)
+print(d)
+
+print('I replaced '+ a + 'to ' + b + str(c)) #c는 숫자이기때문에 str을 써 문자열로 지정을 해주어야 출력가능
+#int float complex를 앞에 붙일시 형변환가능, 복소수 3+4i는 3+4j라고씀
+
+print(5%2) #나머지연산자
+print(3**2) #3^2
+print(3/2) # 진짜나누기
+print(1//3) # 몫연산자
+print(1+2.) #파이썬은 결과값을보고 자동으로 형변환
+
+e= "hi \n" # \n 한줄띄우기
+print(e)
+
+f= r"hi \n" # r을붙이면 순문자열
+print(f)
+
+#class명에 대해서만 카멜케이스형태
+#변수, 함수는 소문자로쓴다 단어사이는 _로 구분지음
+#상수변수는 전부 대문자로 표시
+
+i = \
+5
+
